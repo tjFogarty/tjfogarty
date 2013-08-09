@@ -9,25 +9,24 @@
 /********************
       $UTILITIES 
 *********************/
+
 @import "utilities/normalize";
 @import "utilities/grid";
 @import "utilities/helpers";
 @import "utilities/vars";
 
+
 /********************
         $ATOMS 
 *********************/
 
-/* Globals - fonts, colours... */
 @import "atoms/globals/fonts";
 @import "atoms/globals/colours";
 @import "atoms/globals/animations";
 @import "atoms/globals/base";
 
-/* Buttons */
 @import "atoms/buttons/buttons";
 
-/* Forms - inputs, checkboxes... */
 @import "atoms/forms/checkboxes";
 @import "atoms/forms/html5-inputs";
 @import "atoms/forms/radio-buttons";
@@ -49,3 +48,38 @@
 @import "atoms/text/headings";
 @import "atoms/text/subheadings";
 @import "atoms/text/paragraphs";
+
+/********************
+      $MOLECULES 
+*********************/
+
+@import "molecules/blocks/block-hero";
+
+@import "molecules/components/social-share";
+
+@import "molecules/forms/comment-form";
+@import "molecules/forms/contact-form";
+@import "molecules/forms/newsletter-form";
+@import "molecules/forms/search";
+
+@import "molecules/media/image-with-caption";
+@import "molecules/media/maps";
+
+@import "molecules/navigation/footer-nav";
+@import "molecules/navigation/primary-nav";
+@import "molecules/navigation/secondary-nav";
+@import "molecules/navigation/tabs";
+
+
+/********************
+      $ORGANISMS 
+*********************/
+
+@import "organisms/global/header";
+@import "organisms/global/footer";
+
+@import "organisms/article/article-body";
+
+@import "organisms/comments/comment-thread";
+
+@import "organisms/components/slider";
