@@ -14,7 +14,7 @@ date_default_timezone_set('Europe/Dublin');
   <meta name="description" content="<?php echo $description; ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="/css/global.css?v=<?php echo date('His'); ?>">
+  <link rel="stylesheet" href="/css/global.min.css?v=<?php echo date('His'); ?>">
 
   <!--[if lt IE 9]>
     <script src="/js/fallbacks/lt-ie9.js"></script>
