@@ -1,0 +1,51 @@
+/*
+ * global.scss
+ * No styles to be directly placed in this file
+ * See Atomic Design: http://patternlab.bradfrostweb.com/
+ *
+ */
+
+
+/********************
+      $UTILITIES 
+*********************/
+@import "utilities/normalize";
+@import "utilities/grid";
+@import "utilities/helpers";
+@import "utilities/vars";
+
+/********************
+        $ATOMS 
+*********************/
+
+/* Globals - fonts, colours... */
+@import "atoms/globals/fonts";
+@import "atoms/globals/colours";
+@import "atoms/globals/animations";
+@import "atoms/globals/base";
+
+/* Buttons */
+@import "atoms/buttons/buttons";
+
+/* Forms - inputs, checkboxes... */
+@import "atoms/forms/checkboxes";
+@import "atoms/forms/html5-inputs";
+@import "atoms/forms/radio-buttons";
+@import "atoms/forms/select-menus";
+@import "atoms/forms/text-fields";
+
+@import "atoms/images/logo";
+
+@import "atoms/lists/unordered-lists";
+@import "atoms/lists/ordered-lists";
+@import "atoms/lists/definition-lists";
+
+@import "atoms/media/audio";
+@import "atoms/media/videos";
+
+@import "atoms/tables/tables";
+
+@import "atoms/text/blockquote";
+@import "atoms/text/headings";
+@import "atoms/text/subheadings";
+@import "atoms/text/paragraphs";
