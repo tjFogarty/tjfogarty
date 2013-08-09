@@ -6,9 +6,11 @@
   include('includes/header.php');
 ?>
 
-<header class="grid-container">
+<article class="grid-container">
 	<div class="grid-100">
-		<h1>Project Scaffold</h1>
+		<header>
+			<h1>Project Scaffold</h1>
+		</header>
 
 		<p>Besides including the header and footer, each page accepts 3 variables declared before calling the header:</p>
 		<ol>
@@ -23,6 +25,6 @@
 			</li>
 		</ol>
 	</div>
-</header>
+</article>
 
 <?php include('includes/footer.php'); ?>
