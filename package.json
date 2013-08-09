@@ -1,6 +1,10 @@
 {
-  "name": "your-project-name",
+  "name": "project-scaffold",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url":  "https://github.com/tjFogarty/project-scaffold.git"
+  }
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-uglify": "~0.2.2",
