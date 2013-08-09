@@ -11,13 +11,12 @@ $mail = new PHPMailer;
 
 $mail->From = 'from@example.com';
 $mail->FromName = 'Your Name';
-$mail->AddAddress('tj@diginomarketing.com', 'TJ Fogarty');
+$mail->AddAddress('your@email.com', 'Your Name');
 $mail->AddReplyTo($email, $name);
-$mail->AddBCC('forms@diginomarketing.com');
 
 $mail->IsHTML(true);
 
-$mail->Subject = 'Company Name | Request a callback';
+$mail->Subject = 'Hello :)';
 $mail->Body    = "<strong>Name: </strong>$name <br>";
 $mail->Body    .= "<strong>Email: </strong>$email <br>";
 
