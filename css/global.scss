@@ -2,7 +2,6 @@
  * global.scss
  * No styles to be directly placed in this file
  * See Atomic Design: http://patternlab.bradfrostweb.com/
- *
  */
 
 
@@ -20,29 +19,29 @@
         $ATOMS 
 *********************/
 
-@import "atoms/globals/fonts";
-@import "atoms/globals/colours";
-@import "atoms/globals/animations";
-@import "atoms/globals/base";
+@import "atoms/global/fonts";
+@import "atoms/global/colours";
+@import "atoms/global/animations";
+@import "atoms/global/base";
 
-@import "atoms/buttons/buttons";
+@import "atoms/button/buttons";
 
-@import "atoms/forms/checkboxes";
-@import "atoms/forms/html5-inputs";
-@import "atoms/forms/radio-buttons";
-@import "atoms/forms/select-menus";
-@import "atoms/forms/text-fields";
+@import "atoms/form/checkboxes";
+@import "atoms/form/html5-inputs";
+@import "atoms/form/radio-buttons";
+@import "atoms/form/select-menus";
+@import "atoms/form/text-fields";
 
-@import "atoms/images/logo";
+@import "atoms/image/logo";
 
-@import "atoms/lists/unordered-lists";
-@import "atoms/lists/ordered-lists";
-@import "atoms/lists/definition-lists";
+@import "atoms/list/unordered-lists";
+@import "atoms/list/ordered-lists";
+@import "atoms/list/definition-lists";
 
 @import "atoms/media/audio";
 @import "atoms/media/videos";
 
-@import "atoms/tables/tables";
+@import "atoms/table/tables";
 
 @import "atoms/text/blockquote";
 @import "atoms/text/headings";
@@ -53,14 +52,14 @@
       $MOLECULES 
 *********************/
 
-@import "molecules/blocks/block-hero";
+@import "molecules/block/block-hero";
 
-@import "molecules/components/social-share";
+@import "molecules/component/social-share";
 
-@import "molecules/forms/comment-form";
-@import "molecules/forms/contact-form";
-@import "molecules/forms/newsletter-form";
-@import "molecules/forms/search";
+@import "molecules/form/comment-form";
+@import "molecules/form/contact-form";
+@import "molecules/form/newsletter-form";
+@import "molecules/form/search";
 
 @import "molecules/media/image-with-caption";
 @import "molecules/media/maps";
@@ -80,6 +79,6 @@
 
 @import "organisms/article/article-body";
 
-@import "organisms/comments/comment-thread";
+@import "organisms/comment/comment-thread";
 
-@import "organisms/components/slider";
+@import "organisms/component/slider";
