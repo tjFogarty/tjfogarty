@@ -10,6 +10,6 @@
         k.parentNode.insertBefore(c,k)}(window,document,'script','ga'));
         ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
-    <script src="/js/all.js?v=<?php echo date('His'); ?>"></script>
+    <script src="/js/all.min.js?v=<?php echo date('His'); ?>"></script>
   </body>
 </html>
