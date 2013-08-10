@@ -1,9 +1,9 @@
 {
-  "name": "project-scaffold",
+  "name": "tjfogarty",
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url":  "https://github.com/tjFogarty/project-scaffold.git"
+    "url":  "https://github.com/tjFogarty/tjfogarty.git"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
