@@ -1,0 +1,16 @@
+html {
+	// Base 10
+	font-size: 62.5%;
+}
+
+body {
+	font-family: $bodyFont;
+	font-weight: 200;
+	font-size: 1.4rem;
+	color: $textColour;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}

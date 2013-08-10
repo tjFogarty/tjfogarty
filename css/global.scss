@@ -9,18 +9,18 @@
       $UTILITIES 
 *********************/
 
+@import "utilities/vars";
 @import "utilities/normalize";
 @import "utilities/grid";
 @import "utilities/helpers";
-@import "utilities/vars";
 
 
 /********************
         $ATOMS 
 *********************/
 
-@import "atoms/global/fonts";
 @import "atoms/global/colours";
+@import "atoms/global/fonts";
 @import "atoms/global/animations";
 @import "atoms/global/base";
 

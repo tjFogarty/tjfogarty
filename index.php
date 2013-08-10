@@ -1,30 +1,28 @@
 <?php
-  $title = "Project Scaffold | New Project";
-  $description = "Description";
+  $title = "T.J. Fogarty | Web Development and Design";
+  $description = "Work and thoughts revolving around web development and design. JavaScript, Sass and CSS3.";
   $page = "index";
 
   include('includes/header.php');
 ?>
 
-<article class="grid-container">
-	<div class="grid-100">
-		<header>
-			<h1>Project Scaffold</h1>
-		</header>
-
-		<p>Besides including the header and footer, each page accepts 3 variables declared before calling the header:</p>
-		<ol>
-			<li>
-				<code>$title</code> will be the page title
-			</li>
-			<li>
-				<code>$description</code> will be the description in the meta tag
-			</li>
-			<li>
-				<code>$page</code> is used as a class given to the body tag
-			</li>
-		</ol>
+<header class="hero hero--thin hero--dark">
+	<div class="grid-container">
+		<div class="grid-100">
+			<h1 class="hero__title">T.J. Fogarty</h1>
+			<p class="hero__text">Web Development &amp; Design</p>
+		</div>
 	</div>
-</article>
+</header>
+
+<section class="block">
+	<div class="grid-container">
+		<div class="grid-50 tablet-grid-50">
+			<a href="#" class="button button--small">Small Button</a>
+			<a href="#" class="button">Regular Button</a>
+			<a href="#" class="button button--large">Large Button</a>
+		</div>
+	</div>
+</section>
 
 <?php include('includes/footer.php'); ?>
