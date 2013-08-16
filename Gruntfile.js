@@ -61,6 +61,16 @@ module.exports = function(grunt) {
           }
         ]
       }
+    },
+
+    watch: {
+      scripts: {
+        files: ['js/**/*.js'],
+        tasks: ['compressjs'],
+        options: {
+          spawn: false
+        }
+      }
     }
 
   });
@@ -68,8 +78,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('imagemin', ['imagemin']);
+  grunt.registerTask('watchjs', ['watch']);
   grunt.registerTask('compressjs', ['concat', 'uglify']);
   grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
 };
