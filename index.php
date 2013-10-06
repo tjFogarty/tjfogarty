@@ -28,6 +28,7 @@
 		<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nobis, eos, nam facilis cupiditate minima.</blockquote>
 
 	</article>
+
 </div>
 
 <?php include('includes/footer.php'); ?>
