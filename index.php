@@ -29,6 +29,14 @@
 
 	</article>
 
+	<div class="grid-50">
+		test
+	</div>
+
+	<div class="grid-50">
+		test
+	</div>
+
 </div>
 
 <?php include('includes/footer.php'); ?>

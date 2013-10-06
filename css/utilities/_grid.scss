@@ -20,6 +20,8 @@
   .#{$grid-class}-#{$i*5} {
     float: left;
     width: $i*5%;
+    padding-left: $grid-gutter;
+    padding-right: $grid-gutter;
   }
 
   .pull-#{$i*5} {
