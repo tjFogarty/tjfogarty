@@ -6,28 +6,33 @@
   padding-right: $grid-gutter;
 }
 
-.#{$grid-class}-container {
+%grid-padding-with-float {
+  float: left;
+  padding-left: $grid-gutter;
+  padding-right: $grid-gutter;
+}
+
+.grid-container {
   margin-left: auto;
   margin-right: auto;
   max-width: $grid-max-width;
   @extend %grid-padding;
 }
 
-.#{$grid-class}-parent {
+.grid-parent {
   padding-left: 0;
   padding-right: 0;
 }
 
-.#{$grid-class}-container,
-.#{$grid-class}-100 {
+.grid-container,
+.grid-100 {
   @extend .cf;
 }
 
 @for $i from 1 through 20 {
-  .#{$grid-class}-#{$i*5} {
-    float: left;
+  .grid-#{$i*5} {
     width: $i*5%;
-    @extend %grid-padding;
+    @extend %grid-padding-with-float;
   }
 
   .pull-#{$i*5} {
@@ -41,14 +46,13 @@
 
 [class*=push-],
 [class*=pull-],
-[class*=#{$grid-class}-] {
+[class*=grid-] {
   position: relative;
 }
 
-.#{$grid-class}-33 {
-  float: left;
+.grid-33 {
   width: 33.33333%;
-  @extend %grid-padding;
+  @extend %grid-padding-with-float;
 }
 
 .push-33 {
@@ -59,10 +63,9 @@
   left: -33.33333%;
 }
 
-.#{$grid-class}-66 {
-  float: left;
+.grid-66 {
   width: 66.66667%;
-  @extend %grid-padding;
+  @extend %grid-padding-with-float;
 }
 
 .push-66 {

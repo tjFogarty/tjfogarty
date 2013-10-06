@@ -12,14 +12,21 @@ $green 				: #2e3b21;
 $green-light 		: #62855a;
 $green-yellow 		: #bac44c;
 $red 				: #ba1f25;
-
 $pink 				: #fc5863;
 $purple 			: #7a536f;
 $yellow 			: #f0d863;
 $blue 				: #364a7a;
 
+/**
+ * Colour assignment
+ * Makes it easier if changing colour styles
+ * Rather than using $gray and hunting it down in each stylesheet
+ * Just change it once here
+ */
 $colour-text 		: $gray;
 $color-text 		: $colour-text;
+$colour-border 		: $gray-light;
+$color-border 		: $colour-border;
 $colour-primary 	: $pink;
 $color-primary 		: $colour-primary;
 $colour-secondary 	: $blue;
@@ -45,4 +52,3 @@ $font-heading 		: $font-bold;
  */
 $grid-max-width 	: 960px;
 $grid-gutter 		: 10px;
-$grid-class 		: 'grid';
