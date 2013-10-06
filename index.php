@@ -6,23 +6,28 @@
   include('includes/header.php');
 ?>
 
-<header class="hero hero--thin hero--dark">
-	<div class="grid-container">
-		<div class="grid-100">
-			<h1 class="hero__title">T.J. Fogarty</h1>
-			<p class="hero__text">Web Development &amp; Design</p>
-		</div>
-	</div>
-</header>
+<div class="grid-container">
+	<article class="grid-100">
+		<h1>Heading 1</h1>
+		<h2>Heading 2</h2>
+		<h3>Heading 3</h3>
+		<h4>Heading 4</h4>
+		<h5>Heading 5</h5>
+		<h6>Heading 6</h6>
 
-<section class="block">
-	<div class="grid-container">
-		<div class="grid-50 tablet-grid-50">
-			<a href="#" class="button button--small">Small Button</a>
-			<a href="#" class="button">Regular Button</a>
-			<a href="#" class="button button--large">Large Button</a>
-		</div>
-	</div>
-</section>
+		<p>Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipisicing elit. Iusto, neque, nam, eum, itaque aut error voluptates quis corrupti id provident quia expedita praesentium minima est vero illum cupiditate reprehenderit exercitationem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima alias laborum nemo accusamus harum! Esse, earum officia sequi omnis repudiandae magni ipsam ducimus deserunt asperiores commodi quia aspernatur dolore qui!</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, tempora, accusantium, eum, facere debitis laudantium recusandae vitae aliquid ad explicabo in impedit commodi quisquam cupiditate sunt. Ipsa, quis ex excepturi.</p>
+
+		<a href="#">This is a link</a>
+
+		<hr>
+
+		<time><?php echo date('Y m d'); ?></time>
+
+		<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nobis, eos, nam facilis cupiditate minima.</blockquote>
+
+	</article>
+</div>
 
 <?php include('includes/footer.php'); ?>

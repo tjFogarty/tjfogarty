@@ -1,7 +1,5 @@
-.button {
-	text-decoration: none;
-	padding: 0.8rem;
-	@include vendor('transition', background ease 0.4s);
+[type=submit],
+button {
 
 	&:hover {
 		

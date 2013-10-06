@@ -79,9 +79,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   grunt.registerTask('imagemin', ['imagemin']);
-  grunt.registerTask('watchjs', ['watch']);
+  grunt.registerTask('watchfiles', ['watch']);
   grunt.registerTask('compressjs', ['concat', 'uglify']);
   grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
 };

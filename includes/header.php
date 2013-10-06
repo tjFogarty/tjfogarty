@@ -1,10 +1,9 @@
 <?php 
-date_default_timezone_set('Europe/Dublin');
+date_default_timezone_set('Europe/Dublin'); 
+include( $_SERVER['DOCUMENT_ROOT'] . '/php/functions.php' );
 ?>
-
 <!DOCTYPE html>
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -20,5 +19,8 @@ date_default_timezone_set('Europe/Dublin');
     <script src="/js/fallbacks/lt-ie9.js"></script>
   <![endif]-->
 </head>
-<body class="page-<?php echo $page; ?>">
-  <div class="container">
+<body class="page page--<?php echo $page; ?>">
+  <div class="page-container">
+    <header class="page-header">
+      <?php include('includes/main-navigation.php'); ?>
+    </header>

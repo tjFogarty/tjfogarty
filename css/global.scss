@@ -1,3 +1,5 @@
+/*! tj-fogarty */
+
 /*
  * global.scss
  * No styles to be directly placed in this file
@@ -19,7 +21,6 @@
         $ATOMS 
 *********************/
 
-@import "atoms/global/colours";
 @import "atoms/global/fonts";
 @import "atoms/global/animations";
 @import "atoms/global/base";
@@ -55,6 +56,7 @@
 @import "molecules/block/block-hero";
 
 @import "molecules/component/social-share";
+@import "molecules/component/breadcrumbs";
 
 @import "molecules/form/comment-form";
 @import "molecules/form/contact-form";
@@ -78,6 +80,7 @@
 @import "organisms/global/footer";
 
 @import "organisms/article/article-body";
+@import "organisms/article/article-header";
 
 @import "organisms/comment/comment-thread";
 

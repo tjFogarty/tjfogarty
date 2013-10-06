@@ -10,6 +10,13 @@
         k.parentNode.insertBefore(c,k)}(window,document,'script','ga'));
         ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
+    <?php if( Environment::isLocal() ): ?>
+    <script src="/js/libs/zepto-1.0.1.js"></script>
+    <script src="/js/plugins/unveil.js"></script>
+    <script src="/js/plugins/picturefill.js"></script>
+    <script src="/js/main.js"></script>
+    <?php else: ?>
     <script src="/js/all.min.js?v=<?php echo date('His'); ?>"></script>
+    <?php endif; ?>
   </body>
 </html>
