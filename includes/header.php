@@ -1,6 +1,6 @@
 <?php 
 date_default_timezone_set('Europe/Dublin'); 
-include( $_SERVER['DOCUMENT_ROOT'] . '/php/functions.php' );
+include( $_SERVER['DOCUMENT_ROOT'] . '/php/bootstrap.php' );
 ?>
 <!DOCTYPE html>
 <html>

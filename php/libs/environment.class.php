@@ -1,12 +1,4 @@
 <?php
-
-/** 
- * functions.php
- * @author T.J. Fogarty <fogarty.tj@gmail.com>
- * @link http://tjfogarty.com
- */
-
-
 /**
  * Environment
  * Lets us manage assets based on current environment
