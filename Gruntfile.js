@@ -1,29 +1,79 @@
-// http://gruntjs.com/configuring-tasks#building-the-files-object-dynamically
+  // http://gruntjs.com/configuring-tasks#building-the-files-object-dynamically
 module.exports = function(grunt) {
+
+  /**
+   * Saves having to declare each dependency
+   */
+  require( "matchdep" ).filterDev( "grunt-*" ).forEach( grunt.loadNpmTasks );
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    concat: {
-      options: {
-        // define a string to put between each file in the concatenated output
-        separator: ';'
-      },
-      dist: {
-        // the files to concatenate
-        src: ['js/libs/*.js', 'js/plugins/*.js', 'js/main.js'],
-        // the location of the resulting JS file
-        dest: 'js/all.min.js'
-      }
-    },
 
     uglify: {
       options: {
+        compress: true,
+        mangle: true,
+        report: 'min',
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
-      dist: {
+      
+      build: {
         files: {
-          'js/all.min.js': ['js/all.min.js']
+          "js/all.min.js": ["js/libs/zepto-1.0.1.js", "js/plugins/*.js", "js/main.js"]
         }
       }
+    },
+
+    sass: {
+      build: {
+        files: {
+          'css/global.min.css': 'css/global.scss'
+        },
+        options: {
+          style: 'expanded'
+        }
+      }
+    },
+
+    watch: {
+      scripts: {
+        files: ['js/**/*.js', 'js/main.js'],
+        tasks: ['uglify'],
+        options: {
+          spawn: false
+        }
+      },
+
+      css: {
+        files: ['css/**/*.scss'],
+        tasks: ['sass']
+      },
+
+      styles: {
+        files: ['css/global.min.css'],
+        tasks: ['autoprefixer', 'cssmin'],
+        options: {
+          spawn: false
+        }
+      }
+    },
+
+    cssmin: {
+      minify: {
+        expand: true,
+        cwd: 'css/',
+        src: ['global.min.css'],
+        dest: 'css/',
+        ext: '.min.css'
+      }
+    },
+
+    autoprefixer: {
+      dist: {
+        files: {
+          'css/global.min.css': 'css/global.min.css'
+        }
+     }
     },
 
     imagemin: {
@@ -61,28 +111,8 @@ module.exports = function(grunt) {
           }
         ]
       }
-    },
-
-    watch: {
-      scripts: {
-        files: ['js/**/*.js'],
-        tasks: ['compressjs'],
-        options: {
-          spawn: false
-        }
-      }
     }
 
   });
 
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-sass');
-
-  grunt.registerTask('imagemin', ['imagemin']);
-  grunt.registerTask('watchfiles', ['watch']);
-  grunt.registerTask('compressjs', ['concat', 'uglify']);
-  grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
 };

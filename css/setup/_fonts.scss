@@ -1,0 +1,14 @@
+/**
+ * _fonts.scss
+ */
+
+@font-face {
+    font-family: '';
+    src: url('fonts/.eot');
+    src: url('fonts/.eot?#iefix') format('embedded-opentype'),
+         url('fonts/.svg#LatoHairline') format('svg'),
+         url('fonts/.woff') format('woff'),
+         url('fonts/.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

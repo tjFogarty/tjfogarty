@@ -1,87 +1,12 @@
-/*! tj-fogarty */
-
-/*
+/**
  * global.scss
- * No styles to be directly placed in this file
- * See Atomic Design: http://patternlab.bradfrostweb.com/
+ * No styles to be dropped in here, just drop your modules into the UI folder and import them
  */
 
+@import "vars";
+@import "setup/init";
 
-/********************
-      $UTILITIES 
-*********************/
-
-@import "utilities/vars";
-@import "utilities/helpers";
-@import "utilities/normalize";
-@import "utilities/grid";
-
-
-/********************
-        $ATOMS 
-*********************/
-
-@import "atoms/global/fonts";
-@import "atoms/global/animations";
-@import "atoms/global/base";
-
-@import "atoms/button/buttons";
-
-@import "atoms/form/checkboxes";
-@import "atoms/form/html5-inputs";
-@import "atoms/form/radio-buttons";
-@import "atoms/form/select-menus";
-@import "atoms/form/text-fields";
-
-@import "atoms/image/logo";
-
-@import "atoms/list/unordered-lists";
-@import "atoms/list/ordered-lists";
-@import "atoms/list/definition-lists";
-
-@import "atoms/media/audio";
-@import "atoms/media/videos";
-
-@import "atoms/table/tables";
-
-@import "atoms/text/blockquote";
-@import "atoms/text/headings";
-@import "atoms/text/subheadings";
-@import "atoms/text/paragraphs";
-
-/********************
-      $MOLECULES 
-*********************/
-
-@import "molecules/block/block-hero";
-
-@import "molecules/component/social-share";
-@import "molecules/component/breadcrumbs";
-
-@import "molecules/form/comment-form";
-@import "molecules/form/contact-form";
-@import "molecules/form/newsletter-form";
-@import "molecules/form/search";
-
-@import "molecules/media/image-with-caption";
-@import "molecules/media/maps";
-
-@import "molecules/navigation/footer-nav";
-@import "molecules/navigation/primary-nav";
-@import "molecules/navigation/secondary-nav";
-@import "molecules/navigation/tabs";
-
-
-/********************
-      $ORGANISMS 
-*********************/
-
-@import "organisms/global/header";
-@import "organisms/global/footer";
-
-@import "organisms/article/article-body";
-@import "organisms/article/article-header";
-
-@import "organisms/comment/comment-thread";
-
-@import "organisms/component/slider";
+// custom
+@import "ui/base";
+@import "ui/typography";
+@import "ui/layout";

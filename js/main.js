@@ -1,12 +1,11 @@
-(function($){
+/*globals Zepto, console */
 
-  $( document ).ready( function() {
+(function ($) {
+	
+	'use strict';
 
-    // Do your thing
-    var $html = $( 'html' ),
-    	$body = $( 'body' ),
-    	$pageContainer = $ ( '.page-container' );
+	$(document).ready(function () {
 
-  });
+	});
 
-})( Zepto );
+}(Zepto));

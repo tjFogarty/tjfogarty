@@ -1,0 +1,18 @@
+/**
+ * _setup.scss
+ */
+
+// vars
+$grid: false !default;
+$grid-max-width: 1200px !default;
+$grid-gutter: 10px !default;
+$grid-mobile-breakpoint: 767px !default;
+$grid-pull-push: false !default;
+
+// imports
+@import "mixins";
+@import "normalize";
+@import "clearfix";
+@import "fonts";
+@import "grid";
+@import "helpers";

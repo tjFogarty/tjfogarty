@@ -1,0 +1,31 @@
+/**
+ * _typography.scss
+ */
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+    font-size: 1.4rem;
+    color: $secondary-colour;
+    line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial';
+    font-weight: bold;
+    margin-top: 0;
+}
+
+h1 {
+    color: $primary-colour;
+}
+
+h2 {
+    color: $tertiary-colour;
+}
+
+p {
+    @include rem('margin', 0 0 20px 0);
+}

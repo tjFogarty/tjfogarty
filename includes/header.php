@@ -15,12 +15,11 @@ include( $_SERVER['DOCUMENT_ROOT'] . '/php/bootstrap.php' );
 
   <link rel="stylesheet" href="/css/global.min.css?v=<?php echo date('His'); ?>">
 
-  <!--[if lt IE 9]>
-    <script src="/js/fallbacks/lt-ie9.js"></script>
-  <![endif]-->
 </head>
 <body class="page page--<?php echo $page; ?>">
   <div class="page-container">
-    <header class="page-header">
-      <?php include('includes/main-navigation.php'); ?>
+    <header class="page-header grid-container">
+      <div class="grid-100">
+        <?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/main-navigation.php'); ?>
+      </div>
     </header>

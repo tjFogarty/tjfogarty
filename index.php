@@ -1,34 +1,52 @@
-<?php
-  $title = "T.J. Fogarty | Web Development and Design";
-  $description = "Work and thoughts revolving around web development and design. JavaScript, Sass and CSS3.";
-  $page = "index";
+<?php include(  $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php' ); ?>
 
-  include('includes/header.php');
-?>
+<div class="container">
+	<div class="grid-100">
 
-<div class="grid-container">
-	<article class="grid-100">
-		<h1>Heading 1</h1>
-		<h2>Heading 2</h2>
-		<h3>Heading 3</h3>
-		<h4>Heading 4</h4>
-		<h5>Heading 5</h5>
-		<h6>Heading 6</h6>
+		<ul class="post-list">
+			<li class="post">
+				<article>
+					<header>
+						<h1 class="post__title">Post title</h1>
+						<time class="post__date">10/10/2013</time>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, aliquam, labore, inventore consequatur fugit eaque minus numquam pariatur magnam aspernatur reprehenderit libero facilis ratione eius adipisci aliquid commodi beatae enim.</p>
 
-		<p>Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipisicing elit. Iusto, neque, nam, eum, itaque aut error voluptates quis corrupti id provident quia expedita praesentium minima est vero illum cupiditate reprehenderit exercitationem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima alias laborum nemo accusamus harum! Esse, earum officia sequi omnis repudiandae magni ipsam ducimus deserunt asperiores commodi quia aspernatur dolore qui!</p>
+					<footer>
+						<a href="#">Comments</a> <a href="#">Categories</a>
+					</footer>
+				</article>
+			</li>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, tempora, accusantium, eum, facere debitis laudantium recusandae vitae aliquid ad explicabo in impedit commodi quisquam cupiditate sunt. Ipsa, quis ex excepturi.</p>
+			<li class="post">
+				<article>
+					<header>
+						<h1 class="post__title">Post title</h1>
+						<time class="post__date">10/10/2013</time>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, aliquam, labore, inventore consequatur fugit eaque minus numquam pariatur magnam aspernatur reprehenderit libero facilis ratione eius adipisci aliquid commodi beatae enim.</p>
 
-		<a href="#">This is a link</a>
+					<footer>
+						<a href="#">Comments</a> <a href="#">Categories</a>
+					</footer>
+				</article>
+			</li>
 
-		<hr>
+			<li class="post">
+				<article>
+					<header>
+						<h1 class="post__title">Post title</h1>
+						<time class="post__date">10/10/2013</time>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, aliquam, labore, inventore consequatur fugit eaque minus numquam pariatur magnam aspernatur reprehenderit libero facilis ratione eius adipisci aliquid commodi beatae enim.</p>
 
-		<time><?php echo date('Y m d'); ?></time>
-
-		<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nobis, eos, nam facilis cupiditate minima.</blockquote>
-
-	</article>
-
+					<footer>
+						<a href="#">Comments</a> <a href="#">Categories</a>
+					</footer>
+				</article>
+			</li>
+		</ul>
+	</div>
 </div>
 
-<?php include('includes/footer.php'); ?>
+<?php include( $_SERVER['DOCUMENT_ROOT'] . '/includes/footer.php' ); ?>

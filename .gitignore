@@ -1,4 +1,4 @@
 node_modules/
 npm-debug.log
-dandelion.yml
-css/.sass-cache
+dploy.yaml
+.sass-cache/

@@ -1,0 +1,27 @@
+/**
+ * _vars.scss
+ * Custom vars and overrides
+ */
+
+// Grid
+$grid: true;
+$grid-max-width: 960px;
+$grid-gutter: 10px;
+$grid-mobile-breakpoint: 767px;
+$grid-pull-push: false;
+
+// Colours
+$pink: #e84a5f;
+$gray-dark: #2a363b;
+$grey-dark: $gray-dark;
+$teal: #329c87;
+
+// Colour assignment
+$primary-colour: $pink;
+$primary-color: $primary-colour;
+
+$secondary-colour: $gray-dark;
+$secondary-color: $secondary-colour;
+
+$tertiary-colour: $teal;
+$tertiary-color: $tertiary-colour;

@@ -1,1 +1,0 @@
-sass --watch global.scss:global.min.css --style compressed

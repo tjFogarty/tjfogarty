@@ -11,11 +11,10 @@
         ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-    <?php if( Environment::isLocal() ): ?>
+    <?php if(Environment::isLocal()): ?>
     <script src="/js/libs/zepto-1.0.1.js"></script>
     <script src="/js/plugins/unveil.js"></script>
-    <script src="/js/plugins/picturefill.js"></script>
-    <script src="/js/main.js?v=<?php echo date( 'His' ); ?>"></script>
+    <script src="/js/main.js?v=<?php echo date('His'); ?>"></script>
     <?php else: ?>
     <script src="/js/all.min.js"></script>
     <?php endif; ?>
