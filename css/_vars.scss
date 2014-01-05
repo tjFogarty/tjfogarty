@@ -19,9 +19,21 @@ $teal: #329c87;
 // Colour assignment
 $primary-colour: $pink;
 $primary-color: $primary-colour;
+%primary-colour {
+	color: $primary-colour;
+}
 
 $secondary-colour: $gray-dark;
 $secondary-color: $secondary-colour;
+%secondary-colour {
+	color: $secondary-colour;
+}
 
 $tertiary-colour: $teal;
 $tertiary-color: $tertiary-colour;
+%tertiary-colour {
+	color: $tertiary-colour;
+}
+
+// Fonts
+$sans-serif: 'Source Sans Pro', sans-serif;

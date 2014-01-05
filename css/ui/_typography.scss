@@ -2,30 +2,36 @@
  * _typography.scss
  */
 
-html {
-	font-size: 62.5%;
-}
-
 body {
     font-size: 14px;
-    color: $secondary-colour;
     line-height: 1.4;
+    font-family: $sans-serif;
+    @extend %secondary-colour;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Arial';
     font-weight: bold;
     margin-top: 0;
 }
 
 h1 {
-    color: $primary-colour;
+    @extend %primary-colour;
 }
 
 h2 {
-    color: $tertiary-colour;
+    @extend %tertiary-colour;
 }
 
 p {
     @include rem('margin', 0 0 20px 0);
+}
+
+.page__title {
+	font-size: 50px;
+}
+
+.page__title, p {
+	opacity: 0;
+	@include vendor(animation, fade-in 0.4s ease 0.5s forwards);
+	@extend %text--center;
 }

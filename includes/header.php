@@ -12,7 +12,8 @@ include( $_SERVER['DOCUMENT_ROOT'] . '/php/bootstrap.php' );
   <title><?php echo $title; ?></title>
   <meta name="description" content="<?php echo $description; ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/global.min.css?v=<?php echo date('His'); ?>">
 
 </head>
@@ -21,5 +22,7 @@ include( $_SERVER['DOCUMENT_ROOT'] . '/php/bootstrap.php' );
     <header class="page-header grid-container">
       <div class="grid-100">
         <?php include($_SERVER['DOCUMENT_ROOT'] . '/includes/main-navigation.php'); ?>
+
+        <h1 class="page__title">TJ Fogarty</h1>
       </div>
     </header>

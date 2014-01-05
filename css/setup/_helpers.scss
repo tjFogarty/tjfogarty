@@ -6,57 +6,57 @@
  * Display
  */
 
-.display--block { display: block; }
-.display--none { display: none; }
-.display--inline-block { display: inline-block; }
+%display--block { display: block; }
+%display--none { display: none; }
+%display--inline-block { display: inline-block; }
 
 /**
  * Add/remove floats
  */
-.float--right   { float:right!important; }
-.float--left    { float:left !important; }
-.float--none    { float:none !important; }
+%float--right   { float:right!important; }
+%float--left    { float:left !important; }
+%float--none    { float:none !important; }
 
 
 /**
  * Text alignment
  */
-.text--left     { text-align:left  !important; }
-.text--center   { text-align:center!important; }
-.text--right    { text-align:right !important; }
+%text--left     { text-align:left  !important; }
+%text--center   { text-align:center!important; }
+%text--right    { text-align:right !important; }
 
 
 /**
  * Font weights
  */
-.weight--light      { font-weight:300!important; }
-.weight--normal     { font-weight:400!important; }
-.weight--semibold   { font-weight:600!important; }
+%weight--light      { font-weight:300!important; }
+%weight--normal     { font-weight:400!important; }
+%weight--semibold   { font-weight:600!important; }
 
 
 /**
  * Add/remove margins
  */
-.flush          { margin:       0!important; }
-.flush--top     { margin-top:   0!important; }
-.flush--right   { margin-right: 0!important; }
-.flush--bottom  { margin-bottom:0!important; }
-.flush--left    { margin-left:  0!important; }
-.flush--ends    { margin-top:   0!important; margin-bottom:0!important; }
-.flush--sides   { margin-right: 0!important; margin-left:  0!important; }
+%flush          { margin:       0!important; }
+%flush--top     { margin-top:   0!important; }
+%flush--right   { margin-right: 0!important; }
+%flush--bottom  { margin-bottom:0!important; }
+%flush--left    { margin-left:  0!important; }
+%flush--ends    { margin-top:   0!important; margin-bottom:0!important; }
+%flush--sides   { margin-right: 0!important; margin-left:  0!important; }
 
 
 /**
  * Add/remove paddings
  */
 
-.hard           { padding:       0!important; }
-.hard--top      { padding-top:   0!important; }
-.hard--right    { padding-right: 0!important; }
-.hard--bottom   { padding-bottom:0!important; }
-.hard--left     { padding-left:  0!important; }
-.hard--ends     { padding-top:   0!important; padding-bottom:0!important; }
-.hard--sides    { padding-right: 0!important; padding-left:  0!important; }
+%hard           { padding:       0!important; }
+%hard--top      { padding-top:   0!important; }
+%hard--right    { padding-right: 0!important; }
+%hard--bottom   { padding-bottom:0!important; }
+%hard--left     { padding-left:  0!important; }
+%hard--ends     { padding-top:   0!important; padding-bottom:0!important; }
+%hard--sides    { padding-right: 0!important; padding-left:  0!important; }
 
 /**
  * Hide content off-screen without resorting to `display:none;`, also provide
@@ -81,7 +81,7 @@
 /**
  * Force hardware acceleration, and stop flickering
  */
-.css-performance {
+%css-performance {
     @include vendor(transform, translate3d(0, 0, 0));
     @include vendor(perspective, 1000);
     @include vendor(backface-visibility, hidden);
@@ -91,6 +91,6 @@
  * List styles
  */
 
-.list-style--none {
+%list-style--none {
     list-style: none;
 }
