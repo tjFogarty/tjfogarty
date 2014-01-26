@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       
       build: {
         files: {
-          "js/all.min.js": ["js/libs/zepto-1.0.1.js", "js/plugins/*.js", "js/main.js"]
+          "js/all.min.js": ["js/libs/jquery-2.1.0.js", "js/plugins/*.js", "js/main.js"]
         }
       }
     },

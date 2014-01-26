@@ -1,0 +1,37 @@
+/**
+ * _button.scss
+ */
+
+.button {
+	padding: 0.8rem 1.1rem;
+	background: transparent;
+	border-radius: 4px;
+	margin-bottom: 1.5rem;
+	border: 1px solid $primary-colour;
+	color: $gray-dark;
+	text-decoration: none;
+	transition: 
+		border-color ease 0.3s,
+		color ease 0.3s;
+
+	&:hover {
+		border-color: lighten($primary-colour, 35%);
+	}
+
+	&:active {
+		color: $primary-colour;
+	}
+}
+
+.read-more {
+	text-decoration: none;
+	color: $gray-dark;
+	border-bottom: 1px solid $gray-dark;
+	padding-bottom: 0.3rem;
+	transition: border-color ease 0.3s;
+	@extend %text--center;
+
+	&:hover {
+		border-color: $primary-colour;
+	}
+}

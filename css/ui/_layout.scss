@@ -1,8 +1,7 @@
 /**
  * _layout.scss
  */
- 
+
 .container {
-	@extend %flexbox;
 	@extend .grid-container;
 }

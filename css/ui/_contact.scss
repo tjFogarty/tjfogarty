@@ -1,0 +1,17 @@
+/**
+ * _contact.scss
+ */
+
+.contact-list {
+
+	li {
+		margin-bottom: 2rem;
+	}
+
+	a {
+		width: 6rem;
+		margin: 0 auto;
+		@extend .read-more;
+		@extend %display--block;
+	}
+}

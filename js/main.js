@@ -1,4 +1,4 @@
-/*globals Zepto, console */
+/*globals jQuery, console */
 
 (function ($) {
 	
@@ -6,6 +6,11 @@
 
 	$(document).ready(function () {
 
+		var $header = $('.page__header'),
+			$window = $(window);
+
+		$window.stellar();
+		
 	});
 
-}(Zepto));
+}(jQuery));

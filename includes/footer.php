@@ -11,9 +11,9 @@
         ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
 
-    <?php if(Environment::isLocal()): ?>
-    <script src="/js/libs/zepto-1.0.1.js"></script>
-    <script src="/js/plugins/unveil.js"></script>
+    <?php if (Environment::isLocal()): ?>
+    <script src="/js/libs/jquery-2.1.0.js"></script>
+    <script src="/js/plugins/jquery.stellar.js"></script>
     <script src="/js/main.js?v=<?php echo date('His'); ?>"></script>
     <?php else: ?>
     <script src="/js/all.min.js"></script>
