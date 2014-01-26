@@ -3,12 +3,13 @@
     <!-- END CONTAINER -->
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-        (function(m,a,v,r,c,k){m.GoogleAnalyticsObject=r;m[r]||(m[r]=
-        function(){(m[r].q=m[r].q||[]).push(arguments)});m[r].r=+new Date;
-        c=a.createElement(v);k=a.getElementsByTagName(v)[0];
-        c.src='//www.google-analytics.com/analytics.js';
-        k.parentNode.insertBefore(c,k)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-20898533-4', 'tjfogarty.com');
+      ga('send', 'pageview');
     </script>
 
     <?php if (Environment::isLocal()): ?>
